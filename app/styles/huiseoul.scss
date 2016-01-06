@@ -42,6 +42,20 @@ strong {
   z-index: 10;
 }
 
+a {
+  .icon-arrow-left {
+    left: 20%;
+    position: absolute;
+    top: 50%;
+  }
+
+  .icon-arrow-right {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+  }
+}
+
 .center {
   text-align: center;
 }
@@ -75,8 +89,8 @@ section {
 }
 
 img {
-  &.margin-bottom-20 {
-    margin-bottom: 20px;
+  &.img-margin-bottom {
+    margin-bottom: 50px;
   }
 }
 
