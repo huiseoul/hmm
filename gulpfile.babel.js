@@ -82,7 +82,20 @@ gulp.task('images', () => {
       console.log(err);
       this.end();
     })))
+    .pipe($.rev())
+    .pipe(gulp.dest('dist/images'))
+    .pipe($.rev.manifest())
     .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('image-replace', () => {
+  'use strict';
+
+  var manifest = gulp.src("dist/images/rev-manifest.json");
+
+  return gulp.src("app/index.html")
+    .pipe($.revReplace({manifest: manifest}))
+    .pipe(gulp.dest('dist/test'));
 });
 
 gulp.task('fonts', () => {
