@@ -101,6 +101,12 @@ section {
   }
 }
 
+footer {
+  hr {
+    max-width: 100%;
+  }
+}
+
 img {
   &.img-margin-bottom {
     margin-bottom: 30px;
