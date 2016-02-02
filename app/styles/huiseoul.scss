@@ -1,3 +1,181 @@
+html,
+body {
+  height: 100%;
+}
+
+strong {
+  color: #e91e63;
+  font-weight: bold;
+}
+
 .carousel-indicators {
   top: 5px;
+}
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.header-caption {
+  color: #242424;
+  left: 50%;
+  padding-top: 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.custom-caption {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+a {
+  &.carousel-control {
+    color: #e91e63;
+    font-size: 2em;
+  }
+
+  &.left.carousel-control {
+    span {
+      left: 20%;
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  &.right.carousel-control {
+    span {
+      position: absolute;
+      right: 20%;
+      top: 50%;
+    }
+  }
+}
+
+.carousel-control:hover, .carousel-control:focus {
+  color: #e91e63;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+
+  &.korean {
+    font-size: .99em;
+  }
+}
+
+span {
+  &.korean {
+    font-size: .9em;
+  }
+}
+
+section {
+  .item {
+    padding: 25px 0;
+
+    p {
+      color: #929292;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  hr {
+    max-width: 100%;
+  }
+}
+
+img {
+  &.img-margin-bottom {
+    margin-bottom: 30px;
+  }
+
+  &.img-half {
+    max-width: 50%;
+  }
+}
+
+.img-responsive {
+  margin: auto;
+}
+
+.row-table {
+  display: table;
+}
+
+.col-table {
+  display: table-cell;
+  float: none;
+  vertical-align: bottom;
+
+  p {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.fill {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.carousel-control {
+  &.left,
+  &.right {
+    background: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+
+  [class*="col-sm-"] {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .row-table {
+    display: block;
+  }
+
+  .col-table {
+    display: inline-block;
+  }
+
+  img {
+    &.img-margin-bottom {
+      margin-bottom: 10px;
+    }
+  }
 }

@@ -82,7 +82,20 @@ gulp.task('images', () => {
       console.log(err);
       this.end();
     })))
+    .pipe($.rev())
+    .pipe(gulp.dest('dist/images'))
+    .pipe($.rev.manifest())
     .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('image-replace', ['html', 'images'], () => {
+  'use strict';
+
+  var manifest = gulp.src("dist/images/rev-manifest.json");
+
+  return gulp.src("dist/index.html")
+    .pipe($.revReplace({manifest: manifest}))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('fonts', () => {
@@ -180,7 +193,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'image-replace', 'fonts', 'extras'], () => {
   'use strict';
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
