@@ -118,6 +118,10 @@ img {
   }
 }
 
+.popover {
+  width: 500px;
+}
+
 @media (max-width: 768px) {
   header {
     margin-bottom: 10px;
@@ -144,5 +148,9 @@ img {
     &.img-margin-bottom {
       margin-bottom: 10px;
     }
+  }
+
+  .popover {
+    width: 280px;
   }
 }
