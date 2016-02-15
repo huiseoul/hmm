@@ -8,40 +8,6 @@ strong {
   font-weight: bold;
 }
 
-.carousel-indicators {
-  top: 5px;
-}
-
-.carousel,
-.item,
-.active {
-  height: 100%;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.header-caption {
-  color: #242424;
-  left: 50%;
-  padding-top: 50px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 10;
-}
-
-.custom-caption {
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  width: 100%;
-  z-index: 10;
-}
-
 a {
   &.carousel-control {
     color: #e91e63;
@@ -135,13 +101,6 @@ img {
       margin: 0;
     }
   }
-}
-
-.fill {
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
