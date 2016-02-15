@@ -91,6 +91,7 @@
     // Custom Globals
     "globals"       : {
       "require"     : true,
-      "WOW"         : true
+      "WOW"         : true,
+      "$"           : true
     }        // additional predefined global variables
 }

@@ -43,6 +43,18 @@ a {
   text-align: center;
 }
 
+.h-icon {
+  margin-bottom: 25px;
+}
+
+.h-icon__image {
+  margin-bottom: 20px;
+}
+
+.h-icon__more {
+  margin-bottom: 20px;
+}
+
 p {
   font-size: 14px;
 
@@ -154,6 +166,7 @@ img {
   }
 
   .popover {
-    width: 280px;
+    max-width: 400px;
+    width: 100%;
   }
 }

@@ -45,7 +45,8 @@ const testLintOptions = {
 const lintOptions = {
   globals: {
     'jQuery': true,
-    'WOW': true
+    'WOW': true,
+    '$': true
   }
 };
 
