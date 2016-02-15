@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+header {
+  margin-bottom: 80px;
+}
+
 strong {
   color: #e91e63;
   font-weight: bold;
@@ -115,6 +119,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  header {
+    margin-bottom: 10px;
+  }
+
   p {
     text-align: center;
   }
