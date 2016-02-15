@@ -165,6 +165,12 @@ img {
     }
   }
 
+  .h-icon__image {
+    img {
+      max-width: 40%;
+    }
+  }
+
   .popover {
     max-width: 400px;
     width: 100%;
