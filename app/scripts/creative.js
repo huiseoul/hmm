@@ -52,3 +52,15 @@ $(function () {
 
   $('[data-toggle="popover"]').popover();
 });
+
+$(document).on('click', function(e) {
+  var target = $(e.target);
+  var isPopover = target.data('toggle') === 'popover';
+  
+  if (isPopover) {
+    target.popover('toggle');
+    $('[data-toggle="popover"]').not(target).popover('hide');
+  } else {
+    $('[data-toggle="popover"]').popover('hide');
+  }
+});
