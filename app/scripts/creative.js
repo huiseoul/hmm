@@ -54,9 +54,11 @@ $(function () {
 });
 
 $(document).on('click', function(e) {
+  'use strict';
+
   var target = $(e.target);
   var isPopover = target.data('toggle') === 'popover';
-  
+
   if (isPopover) {
     target.popover('toggle');
     $('[data-toggle="popover"]').not(target).popover('hide');
